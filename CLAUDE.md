@@ -15,9 +15,9 @@ propose it first instead of doing it.
 ## Commands
 
 ```bash
-npm run dev      # local dev server
-npm run build    # must pass before any change is considered done
-npm run lint
+pnpm  dev      # local dev server
+pnpm build    # must pass before any change is considered done
+pnpm  lint
 ```
 
 ## Invariants — do not break these
