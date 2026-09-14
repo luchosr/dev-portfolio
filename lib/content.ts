@@ -180,8 +180,8 @@ export const projects: Project[] = [
     title: 'NomadHome',
     year: '2026',
     description:
-      'A co-living and workspace booking platform, built solo end to end. Next.js frontend, Node and Prisma over PostgreSQL, Stripe Checkout for payments, transactional email through Resend. Backend on Railway, frontend on Vercel — schema, API and UI all mine.',
-    tags: ['Next.js', 'Node.js', 'Prisma', 'PostgreSQL', 'Stripe'],
+      'A co-living and workspace booking platform, built solo end to end. React.js frontend, Node and Prisma over PostgreSQL, Stripe Checkout for payments, transactional email through Resend. Backend on Railway, frontend on Vercel — schema, API and UI all mine.',
+    tags: ['React.js', 'Node.js', 'Prisma', 'PostgreSQL', 'Stripe'],
     // href: live demo or repo — optional, only if you want the card clickable
   },
   {
