@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Oxanium, DM_Sans } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/next';
 import { site, contact } from '@/lib/content';
 import './globals.css';
 
@@ -92,7 +93,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
