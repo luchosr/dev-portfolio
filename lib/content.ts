@@ -42,7 +42,7 @@ export const site = {
   name: 'Luciano Ramello',
   domain: '.dev',
   monogram: 'L·R',
-  url: 'https://luciano-ramello.dev', // TODO: confirm final domain
+  url: 'https://www.lucianoramello.dev',
   available: true,
   availabilityLabel: 'Available · EU remote',
   navigation: [

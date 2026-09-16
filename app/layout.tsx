@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Oxanium, DM_Sans } from 'next/font/google';
-import { site } from '@/lib/content';
+import { site, contact } from '@/lib/content';
 import './globals.css';
 
 const oxanium = Oxanium({
@@ -20,6 +20,17 @@ export const metadata: Metadata = {
   title: `${site.name} — Senior Frontend Developer`,
   description:
     'Senior Frontend Developer in Madrid. React, TypeScript and Next.js, moving toward fullstack with Node.js and Prisma. Banking and aviation background.',
+  keywords: [
+    'Luciano Ramello',
+    'Frontend Developer',
+    'Senior Frontend Developer',
+    'React Developer',
+    'TypeScript Developer',
+    'Next.js Developer',
+    'Fullstack Developer',
+    'Madrid',
+    'Remote Frontend Developer Europe',
+  ],
   openGraph: {
     title: `${site.name} — Senior Frontend Developer`,
     description:
@@ -64,6 +75,22 @@ export default function RootLayout({
     >
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'Person',
+              name: site.name,
+              url: site.url,
+              jobTitle: 'Senior Frontend Developer',
+              address: { '@type': 'PostalAddress', addressLocality: 'Madrid', addressCountry: 'ES' },
+              sameAs: contact.links
+                .filter((link) => link.type !== 'email')
+                .map((link) => link.href),
+            }),
+          }}
+        />
       </head>
       <body>{children}</body>
     </html>
